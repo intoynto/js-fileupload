@@ -1,5 +1,4 @@
 const path=require("path");
-//const DeclarationBundlerPlugin = require('types-webpack-bundler');
 const TypescriptDeclarationPlugin = require('typescript-declaration-webpack-plugin');
 const TerserWebpackPlugin = require('terser-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
@@ -16,7 +15,10 @@ module.exports=function(env,args)
         output:{
             path:path.resolve(__dirname,"dist"),
             chunkFilename: '[name].js',
-            filename: '[name].js'
+            filename: '[name].js',
+            libraryTarget: 'umd',
+            library: `${dev.MODUL_NAME}`,
+            umdNamedDefine: true
         },
         devtool:'source-map',
         resolve: { 

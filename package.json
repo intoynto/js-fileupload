@@ -11,6 +11,9 @@
     "g": "webpack --mode development",
     "b": "webpack --mode production"
   },
+  "dependencies": {
+    "preact": "^10.6.2"
+  },
   "devDependencies": {
     "@babel/core": "^7.16.0",
     "@babel/preset-env": "^7.16.4",
@@ -32,8 +35,5 @@
     "type": "git",
     "url": "git+https://github.com/intoynto/js-fileupload"
   },
-  "homepage": "https://github.com/intoynto/js-fileupload",
-  "dependencies": {
-    "preact": "^10.6.2"
-  }
+  "homepage": "https://github.com/intoynto/js-fileupload"
 }

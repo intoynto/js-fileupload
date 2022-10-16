@@ -1,39 +1,45 @@
 {
   "name": "intoy-fileupload",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "js file upload",
-  "main": "dist/fileupload.js",
-  "typings": "dist/fileupload.d.ts",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
   "author": "intoy",
   "license": "MIT",
   "scripts": {
-    "dts": "node wp.dts.js",
-    "g": "webpack --mode development",
-    "b": "webpack --mode production"
+    "pre": "del dist",
+    "b": "npm run pre && rollup -c"
   },
   "dependencies": {
-    "preact": "10.10.2"
+    "preact": "^10.10.2"
   },
   "devDependencies": {
     "@babel/core": "^7.16.0",
     "@babel/preset-env": "^7.16.4",
     "@babel/preset-react": "^7.16.0",
+    "@babel/preset-typescript": "^7.16.7",
+    "@rollup/plugin-alias": "^3.1.9",
+    "@rollup/plugin-babel": "^5.3.1",
+    "@rollup/plugin-commonjs": "^21.1.0",
+    "@rollup/plugin-node-resolve": "^13.2.1",
+    "@rollup/plugin-typescript": "^8.3.2",
     "@types/node": "^16.11.11",
     "@types/react": "^17.0.37",
     "@types/react-dom": "^17.0.11",
     "@types/webpack": "^5.28.0",
     "babel-loader": "^8.2.3",
-    "clean-webpack-plugin": "^4.0.0",
-    "terser-webpack-plugin": "^5.2.5",
+    "fs-extra": "^10.0.1",
+    "rollup": "^2.70.2",
+    "rollup-plugin-dts": "^4.2.1",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-terser": "^7.0.2",
     "ts-loader": "^9.2.6",
-    "typescript": "^4.5.2",
-    "typescript-declaration-webpack-plugin": "^0.2.2",
-    "webpack": "^5.64.4",
-    "webpack-cli": "^4.9.1"
+    "tslib": "^2.3.1",
+    "typescript": "^4.6.3"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/intoynto/js-fileupload"
+    "url": "git+https://github.com/intoynto/js-base"
   },
-  "homepage": "https://github.com/intoynto/js-fileupload"
+  "homepage": "https://github.com/intoynto/js-base"
 }

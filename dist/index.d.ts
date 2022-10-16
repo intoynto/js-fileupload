@@ -1,18 +1,19 @@
-export declare type IrdrLabelProps = {
+import React from "react";
+declare type IrdrLabelProps = {
     hasFile: boolean;
     hasDrag: boolean;
 };
-export declare type IlocalProps = {
+declare type IlocalProps = {
     onChange?: (files: any) => void;
     name?: string;
     renderLabel?: (props: IrdrLabelProps) => JSX.Element;
 };
-export declare type Istate = {
+declare type Istate = {
     dragType: string;
     file: File | null | undefined;
     blob: Blob | null | undefined;
 };
-export declare class FileUpload<P extends IlocalProps, S extends Istate> extends React.Component<P, S> {
+declare class FileUpload<P extends IlocalProps, S extends Istate> extends React.Component<P, S> {
     private iUid;
     private _key;
     private ndInput;

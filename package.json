@@ -1,6 +1,6 @@
 {
   "name": "intoy-fileupload",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "description": "js file upload",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -39,7 +39,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/intoynto/js-base"
+    "url": "git+https://github.com/intoynto/js-fileupload"
   },
-  "homepage": "https://github.com/intoynto/js-base"
+  "homepage": "https://github.com/intoynto/js-fileupload"
 }
